@@ -4,8 +4,8 @@
    Case Problem 2
 
    Random Jane Austen Quote Generator
-   Author: 
-   Date:   
+   Author: Zack Zhao
+   Date:   2022-10-28
    
    This script randomly generates a Jane Austen quote from
    a list of 10 quotes and writes that quote into the first
