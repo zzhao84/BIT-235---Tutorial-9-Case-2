@@ -24,7 +24,7 @@ function randomInt(lowest, size) {
 }
    
 /* Reference to quote tag name */
-var quoteElem = document.getElementsByTagName("quotes");
+var quoteElem = document.getElementsByTagName("quote");
    
 /* Execute the function to generate random Jane Austen quote */
 quoteElem.innerHTML = getQuote(randomQ);
