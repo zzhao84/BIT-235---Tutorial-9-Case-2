@@ -24,13 +24,13 @@ function randomInt(lowest, size) {
 }
    
 /* Reference to quote tag name */
-var quoteElem = document.getElementsByTagName("quote");
+var quoteElem = document.getElementsById("quote");
    
 /* Execute the function to generate random Jane Austen quote */
 quoteElem.innerHTML = getQuote(randomQ);
 
 function getQuote(n) {
-   var quote = [
+   var quotes = [
    "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
    "I hate to hear you talk about all women as if they were fine ladies instead of rational creatures. None of us want to be in calm waters all our lives.",
    "Silly things do cease to be silly if they are done by sensible people in an impudent way.",
@@ -43,5 +43,5 @@ function getQuote(n) {
    "The person, be it gentlemen or lady, who has not pleasure in a good novel, must be intolerably stupid."
    ];
    
-   return quote[n];
+   return quotes[n];
 }
