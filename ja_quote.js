@@ -15,16 +15,16 @@
 
 */
 
-/* Execute the function to generate a random integer from 0 to 9 */
+/* Execute the function */
 var randomQ = randomInt(0, 10);
 
 /* Function to generate a random integer */ 
 function randomInt(lowest, size) {
-   return Math.floor(lowest + size*Math.random());
+   return Math.floor(Math.random() * size) + lowest;
 }
    
 /* Reference to quote tag name */
-var quoteElem = document.getElementsById("quote");
+var quoteElem = document.getElementById("quote");
    
 /* Execute the function to generate random Jane Austen quote */
 quoteElem.innerHTML = getQuote(randomQ);
