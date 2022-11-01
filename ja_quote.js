@@ -16,6 +16,7 @@
 */
 
 /* Execute the function to generate a random integer from 0 to 9 */
+randomInt(0, 10);
 var randomQ = randomInt(0, 10);
 
 /* Function to generate a random integer */ 
