@@ -1,3 +1,5 @@
+"use strict";
+
 /*
    New Perspectives on HTML5 and CSS3, 8th Edition
    Tutorial 9
@@ -13,6 +15,19 @@
 
 */
 
+/* Execute the function to generate a random integer from 0 to 9 */
+var randomQ = randomInt(0, 10);
+
+/* Function to generate a random integer */ 
+function randomInt(lowest, size) {
+   return Math.floor(lowest + size*Math.random());
+}
+   
+/* Reference to quote tag name */
+var quoteElem = document.getElementsByTagName("quotes");
+   
+/* Execute the function to generate random Jane Austen quote */
+quoteElem.innerHTML = getQuote(randomQ);
 
 function getQuote(n) {
    var quotes = [
