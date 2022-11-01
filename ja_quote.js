@@ -1,4 +1,4 @@
-"use_strict";
+"use strict";
 
 /*
    New Perspectives on HTML5 and CSS3, 8th Edition
@@ -20,7 +20,7 @@ var randomQ = randomInt(0, 10);
 
 /* Function to generate a random integer */ 
 function randomInt(lowest, size) {
-   return Math.floor(Math.random() * size) + lowest;
+   return Math.floor(lowest + (Math.random()*size));
 }
    
 /* Reference to quote tag name */
